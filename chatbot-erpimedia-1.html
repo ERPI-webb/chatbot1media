@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .center-div {
+        width: 100%;
+        height: 700px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 5px;
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      @media only screen and (max-width: 600px) {
+        .center-div {
+          height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class='absolute inset-4'>
+        <div class='center-div relative h-full w-full overflow-clip rounded-md border border-zinc-200 bg-white p-2 px-0 py-0'>
+          <iframe
+            style='border: none; width: 100%; height: 100%;'
+            srcdoc='<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script src=&quot;https://cdn.botpress.cloud/webchat/v0/inject.js&quot;></script>
+    <script>
+      window.botpressWebChat.init({
+        composerPlaceholder: &quot;Chat with bot&quot;,
+        botConversationDescription: &quot;This chatbot was built surprisingly fast with Botpress&quot;,
+        botName: &quot;Name&quot;,
+        botId: &quot;6f8b331d-d33d-4a77-aa1a-5eab4977c17a&quot;,
+        hostUrl: &quot;https://cdn.botpress.cloud/webchat/v0&quot;,
+        messagingUrl: &quot;https://messaging.botpress.cloud&quot;,
+        clientId: &quot;6f8b331d-d33d-4a77-aa1a-5eab4977c17a&quot;,
+        enableConversationDeletion: true,
+        showPoweredBy: false,
+        className: &quot;webchatIframe&quot;,
+        containerWidth: &quot;100%25&quot;,
+        layoutWidth: &quot;100%25&quot;,
+        hideWidget: true,
+        showCloseButton: false,
+        disableAnimations: true,
+        closeOnEscape: false,
+        showConversationsButton: false,
+        enableTranscriptDownload: false,
+        stylesheet: &quot;https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css&quot;
+      });
+      window.botpressWebChat.onEvent(function () {
+        window.botpressWebChat.sendEvent({ type: &quot;show&quot; });
+      }, [&quot;LIFECYCLE.LOADED&quot;]);
+    </script>
+  </body>
+</html>'
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
